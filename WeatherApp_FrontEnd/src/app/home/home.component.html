@@ -1,0 +1,51 @@
+<div class="globallymovedown">
+  <main>
+    <div *ngIf="!city" class="loader"></div>
+
+    <section class="vh-160">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-10 col-lg-8 col-xl-6">
+            <div class="card bg-dark text-white">
+              <div class="bg-image">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp"
+                  class="card-img"
+                  alt="weather"
+                />
+                <div
+                  class="mask"
+                  style="background-color: rgba(253, 253, 253, 0.5)"
+                ></div>
+              </div>
+              <div class="card-img-overlay text-dark p-5">
+                <h1 class="mb-2" style="float: right">{{ city.name }}</h1>
+                <h5>Today : {{ getDate() }}</h5>
+                <h3 class="display-2 my-3">{{ city.weatherDescription }}</h3>
+                <h4 class="mb-4">
+                  <strong>Feels Like: {{ city.temp }} °C</strong>
+                </h4>
+
+                <h4 class="mb-2">
+                  <strong>Min Temp.: {{ city.mintemp }}</strong>
+                </h4>
+
+                <h4 class="mb-2">
+                  <strong>Max Temp: {{ city.maxtemp }}</strong>
+                </h4>
+
+                <h4 class="mb-2">
+                  <strong>Pressure: {{ city.pressure }}</strong>
+                </h4>
+
+                <h4 class="mb-2">
+                  <strong>Humidity: {{ city.humidity }}</strong>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

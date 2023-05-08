@@ -1,0 +1,71 @@
+<div class="globallymovedown">
+  <!-- <div class="moving-clouds" style="background-image: url('assets/images/clouds2.png'); "></div> -->
+<div class = "search">
+    <h2 class="h2-responsive">Search Weather by city</h2>
+    <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>Enter city name</mat-label>
+            <input matInput id="searchbox" type="text" [(ngModel)]="value" placeholder="search weather by city" >
+         
+      </mat-form-field>
+    </div>
+    
+
+<div class="searchField" >
+    <!-- <input type="text"> -->
+
+    <div class= "searchButton">
+        <button id="searchbutton" [disabled]="value.length==0" mat-raised-button  width="80px" (click)="buttonClick()">Search</button>
+    </div>
+</div>
+
+<div class="para" *ngIf="flag">
+  <div *ngIf="!city" class="loader"></div>
+
+</div>
+
+<!-- <mat-spinner *ngIf="loading" class="spinner" diameter="40"></mat-spinner> -->
+
+<div class = weather-card *ngIf="found&&viewCard" style="background-image: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1557323760/weather.svg) no-repeat center;;">
+<mat-card class="mat-elevation-z5">
+  <mat-card-header style="background-color: grey">
+    <mat-card-title>{{ city.name }}  weather</mat-card-title>
+    <mat-card-subtitle>Today: {{getDate()}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="flex-row">
+      <div class= "temperature">
+        <span class = "feels-like">Feels like <b> {{ city.weatherDescription }}</b></span>
+        <div style="float:left;">
+          <span style="display:inline; ">Lat : {{ city.lat }} </span>/
+          <span style="display:inline; "> Lon : {{ city.lon }}</span>
+      </div>
+      <span class = "feels-like">Pressure : {{ city.temp }}</span>
+      <div style="float:left;">
+        <span style="display:inline; "> Min Temp : {{ city.mintemp }} </span>/
+        <span style="display:inline; "> Max Temp :{{ city.maxtemp }}</span>
+    </div>
+    <div class="space"></div>
+      <span class = "feels-like">Pressure : {{ city.pressure }}</span>
+      <span class = "feels-like">Humidity : {{ city.humidity }}</span>
+    
+     
+
+      </div>
+     
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="favToggle()" mat-raised-button [style.color]="toggleColor">{{ toggleString }}</button>
+
+  </mat-card-actions>
+</mat-card>
+
+</div>
+
+
+<div class="myemptyspace"> 
+
+</div>
+
+
+</div>

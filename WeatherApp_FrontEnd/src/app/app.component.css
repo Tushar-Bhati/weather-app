@@ -1,0 +1,58 @@
+.spacer
+{
+    flex: 1 1 auto;
+}
+
+::ng-deep .customize {
+    background:lightgrey;
+     position:relative;
+    margin-right: 100px;
+    margin-top: 20px; 
+  
+  }
+
+.drop-down
+{
+    margin-right: 80px;
+}
+.user-name-title
+{
+    color: grey;
+    font-size: 0.7cm;
+    font-weight: bold;
+}
+ .login-signup{
+    margin: 10px;
+    background-color: rgb(209, 245, 217);
+} 
+
+.logo
+{
+    color: rgb(165, 160, 133);
+    font-size: 0.8cm;
+    font-weight: 900;
+}
+
+.logo-pic
+{
+    color:gainsboro;
+}
+
+/* .customize
+{
+    position: sticky;
+  top: 0px;
+}  */
+.icon-display {
+    transform: scale(1.5);
+ }
+
+@media (min-width: 900px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+
+    .mynavbar
+{
+    position:fixed;  
+  z-index:100;
+}
+  }

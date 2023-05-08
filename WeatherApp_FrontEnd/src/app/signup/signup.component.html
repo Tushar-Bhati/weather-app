@@ -1,0 +1,35 @@
+<div class="globallymovedown">
+<div class="registration-form">
+    <form (ngSubmit)="onSubmit()">            
+            
+        
+        <div class="form-group">
+            <input type="text" class="form-control item" id="name" 
+            placeholder="name" [(ngModel)]="user.name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <input type="city" class="form-control item" id="city" 
+            placeholder="city" [(ngModel)]="user.city" name="city" required> 
+        </div>
+
+        <div class="form-group">
+            <input type="country" class="form-control item" id="country" 
+            placeholder="country" [(ngModel)]="user.country" name="country" required> 
+        </div>
+
+        <div class="form-group">
+            <input type="password" class="form-control item" id="password" 
+            placeholder="Password" [(ngModel)]="user.password" name="password" required>
+        </div>
+
+
+       
+        <div class="form-group">
+            <button id="searchbutton" mat-raised-button  type="submit" class="btn btn-block create-account">Sign Up</button>
+
+        </div>
+    </form>
+</div>
+
+</div>

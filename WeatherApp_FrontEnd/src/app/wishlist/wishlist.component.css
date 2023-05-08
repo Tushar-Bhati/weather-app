@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.noCityTitle
+{
+    margin: 200px;
+    text-align: center;
+    
+}
+.h1-responsive
+{
+    font-weight: 900;
+    font-size: 0.8cm;
+    color: rgb(42, 181, 216);
+}
+
+.progress-bar
+{
+   margin: auto;
+   padding: 90px;
+   
+    background-color:transparent;
+
+}
+.data{
+    margin-right: 50px;
+    margin-bottom: 8%;
+}
+.row{
+    margin-bottom: 8%;
+}
+.img_bg{
+    text-align: center;
+    width: 268px;
+    height: 200px; 
+}
+#view_details{
+    margin-left: auto;
+}
+#fav{
+    margin-right: auto;
+}
+
+.flex-grow-1,
+#heading{
+    font-family: 'Marcellus', serif;
+    
+}
+.card {
+    margin-bottom: 5px;
+    margin-top: 24px;
+    background-color: rgba(51,107,135,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    color: #2e2f38;
+    font-family: 'Marcellus', serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 2;
+}
+
+
+#heading {
+    font-size: 55px;
+    color: #2b304d
+}
+
+.temp {
+    place-items: center
+}
+
+.temp-details>p>span,
+.grey
+{
+    color: #24262c;
+    font-size: 18px
+}
+
+.fa {
+    color: #a5a5b1
+}
+
+*:focus {
+    outline: none
+}
+.space
+{
+    padding: 20px;
+}
+
+.second
+{
+    top:400px;
+}
+
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+body {
+    background-color: #f9f9fa
+}
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 5rem
+}
+
+.grid-margin, .purchace-popup > div {
+   margin-bottom: 25px;
+}
+
+.card {
+   border: 0;
+   border-radius: 2px;
+}
+
+.card-weather {
+   background: #e1ecff;
+   background-image: linear-gradient(to left bottom, #d6eef6, #dff0fa, #e7f3fc, #eff6fe, #f6f9ff);
+}
+
+.card {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: #fff;
+   background-clip: border-box;
+   border: 1px solid rgba(0, 0, 0, 0.125);
+   border-radius: 0.25rem;
+}
+
+
+.card-weather .card-body:first-child {
+    background-image: url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp);
+
+   background-size: cover;
+}
+
+.card .card-body {
+   padding: 1.88rem 1.81rem;
+}
+
+.card-body {
+   flex: 1 1 auto;
+   padding: 1.25rem;
+}
+
+.card-weather .weather-date-location {
+   padding: 0 0 38px;
+}
+
+.h3, h3 {
+   font-size: 1.56rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+}
+
+.text-gray, .card-subtitle, .new-accounts ul.chats li.chat-persons a p.joined-date {
+   color: #969696;
+}
+
+p {
+   font-size: 13px;
+}
+
+.text-gray, .card-subtitle, .new-accounts ul.chats li.chat-persons a p.joined-date {
+   color: #969696;
+}
+
+.card-weather .weather-data {
+   padding: 0 0 4.75rem;
+}
+
+.mr-auto, .mx-auto {
+   margin-right: auto !important;
+}
+
+.display-3 {
+   font-size: 2.5rem;
+}
+
+.card-weather .card-body {
+   background: #ffffff;
+}
+
+.card-weather .weakly-weather {
+   background: #007bff;
+   overflow-x: auto;
+}
+
+.card-weather .weakly-weather .weakly-weather-item {
+   flex: 0 0 14.28%;
+   border-right: 1px solid #f2f2f2; 
+   padding: 1rem;
+   text-align: center;
+}
+
+.mb-0, .my-0 {
+   margin-bottom: 0 !important;
+}
+.loader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../../assets//icons8-rain.gif') 
+                50% 50% no-repeat rgb(249,249,249);
+  }
+.card-weather .weakly-weather .weakly-weather-item i {
+   font-size: 1.6rem;
+   font-weight: 200;
+} 
+

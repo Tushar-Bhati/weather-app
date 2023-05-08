@@ -1,0 +1,43 @@
+<div class="globallymovedown">
+
+<div class="registration-form">
+    <form (ngSubmit)="onSubmit()">
+        <h2 class="h3-responsive" style="color: blue"> Profile</h2>
+     
+
+       
+        <mat-form-field class="example-form-field" appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput id="name" type="text" value={{user.name}} disabled="true" name="name">
+        </mat-form-field>
+
+     
+
+          
+
+        <!-- EMAIL -->
+
+        <mat-form-field class="example-form-field" appearance="outline">
+            <mat-label>City</mat-label>
+                <input matInput id="city" type="text" [(ngModel)]="user.city" [name]="user.city" [ngModelOptions]="{standalone: true}" placeholder="Enter your Updated City">
+                
+          </mat-form-field>
+
+
+          <mat-form-field class="example-form-field" appearance="outline">
+            <mat-label>Country</mat-label>
+                <input matInput id="country" type="text" [(ngModel)]="user.country" [name]="user.country" [ngModelOptions]="{standalone: true}" placeholder="Enter your Updated Country">
+                
+          </mat-form-field>
+          <!-- PROFILE PICTURE -->
+
+          <!-- SUBMIT -->
+       
+        <div class="form-group">
+            <!-- <button type="submit" class="btn btn-block create-account">Update Profile</button> -->
+            <button mat-raised-button id="submitbutton" type="submit" style="color: #007bff" class = "submitButton" >Update Profile</button>
+        </div>
+    </form>
+</div>
+
+</div>

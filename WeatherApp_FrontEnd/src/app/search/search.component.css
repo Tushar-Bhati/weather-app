@@ -1,0 +1,153 @@
+.h2-responsive
+{
+    margin-top: 30px;
+    color: #001f3f;
+}
+
+.searchField
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.searchButton
+{
+    margin: auto;
+}
+.searchButton .mat-raised-button
+{
+  width:150px;
+  height: 40px;
+}
+.loader{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../../assets/icons8-rain.gif') 
+              50% 50% no-repeat rgb(249,249,249);
+}
+.search{
+    text-align: center;
+}
+.spinner 
+{
+  margin: auto;
+}
+
+.example-form-field {
+    width: 500px;
+    margin: auto;
+
+  }
+  .container
+  {
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .data{
+    margin-right: 50px;
+    margin-bottom: 8%;
+}
+.img_bg{
+    width: 250px;
+    height: 250px; 
+}
+#view_details{
+    margin-left: auto;
+}
+#fav{
+    margin-right: auto;
+}
+
+.temp
+{
+  font-size: 1cm;
+}
+
+.success-snackbar
+{
+  background: #335d2d !important;
+  background-color: #335d2d !important;
+}
+
+.weather-card
+{
+  width:50%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.myemptyspace
+{
+  padding: 10px;
+}
+
+mat-card::ng-deep .mat-card-header-text {
+  width: 100%;
+  text-align: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-row > div {
+  flex: 50%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.flex-row > .outlook {
+  color: black;
+  background: rgba(0, 0, 0, 0.1);
+}
+.flex-row > .temperature {
+  background-image: url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp);
+  color: black;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.big-text {
+  font-size: 40px;
+  padding: 10px;
+}
+.feels-like
+{
+  font-size: 16px;
+  padding:3px;
+}
+.image {
+  height: 80px;
+}
+.weather-desc
+{
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.country
+{
+  font-size: 14px;
+  margin-right: 20px;
+  padding-top: 6px;
+}
+
+.progress-bar
+{
+  margin: auto;
+  padding: 45px;
+  background-color:  transparent;
+}
+
+.para
+{
+  padding-top: 106px;
+}

@@ -1,0 +1,119 @@
+
+<div class="globallymovedown">
+
+
+    <main>
+  
+      <div class = "noCityTitle" *ngIf="!loading&&flag">
+        <h1 class="h1-responsive">No favourite city to show</h1>
+    </div>
+  
+    <div *ngIf="!cities" class="loader"></div>
+
+  
+      <div class="page-content page-container" id="page-content">
+        <div class="padding">
+            <div class="row container d-flex justify-content-center">
+    <div class="col-lg-8 grid-margin stretch-card">
+                  <!--weather card-->
+                  <div class="card card-weather"  *ngFor="let city of cities">
+                    <div class="card-body">
+                      <div class="weather-date-location">
+                        <h2 style="float:right">{{city.name}}</h2>
+                        <h6>
+                            <button mat-button (click)="favToggle(city)" [style.color]="favColor"><i class="material-icons">favorite</i></button>
+                        </h6>
+                        <p class="text-gray">
+                          <span class="weather-date">Today : {{getDate()}} </span>
+                        </p>
+  
+                      </div>
+                      <div class="weather-data d-flex">
+                        <div class="mr-auto">
+                          <h4 class="display-3">{{city.temp}}
+                            <span class="symbol">&deg;</span>C</h4>
+                          <p>
+                           <b> {{city.weatherDescription}}</b>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="d-flex weakly-weather">
+                        <div class="weakly-weather-item">
+                          <p class="mb-0">
+                            Min Temp
+                          </p>
+                          <i class="mdi mdi-weather-cloudy"></i>
+                          <p class="mb-0">
+                            {{city.mintemp}}
+                          </p>
+                        </div>
+                        <div class="weakly-weather-item">
+                          <p class="mb-1">
+                            Max Temp
+                          </p>
+                          <i class="mdi mdi-weather-hail"></i>
+                          <p class="mb-0">
+                            {{city.maxtemp}}
+                          </p>
+                        </div>
+                        <div class="weakly-weather-item">
+                          <p class="mb-1">
+                            Pressure
+                          </p>
+                          <i class="mdi mdi-weather-partlycloudy"></i>
+                          <p class="mb-0">
+                            {{city.pressure}}
+                          </p>
+                        </div>
+                        <div class="weakly-weather-item">
+                          <p class="mb-1">
+                            Humidity
+                          </p>
+                          <i class="mdi mdi-weather-pouring"></i>
+                          <p class="mb-0">
+                            {{city.humidity}}
+                          </p>
+                        </div>
+                        <div class="weakly-weather-item">
+                          <p class="mb-1">
+                            Sunrise
+                          </p>
+                          <i class="mdi mdi-weather-pouring"></i>
+                          <p class="mb-0">
+                            {{city.sunrise}}
+                          </p>
+                        </div>
+                        <div class="weakly-weather-item">
+                          <p class="mb-1">
+                            Sunset
+                          </p>
+                          <i class="mdi mdi-weather-snowy-rainy"></i>
+                          <p class="mb-0">
+                            {{city.sunset}}
+                          </p>
+                        </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <!--weather card ends-->
+                </div>
+                </div>
+                </div>
+                </div>
+    
+    
+    
+  
+  
+  
+  
+       
+      </main>
+      
+    
+    </div>
+  
+    
