@@ -1,0 +1,37 @@
+server:
+  port: 9191
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    
+    
+spring:
+  application:
+    name: APIGATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: EXTERNALSERVICE
+          uri: lb://EXTERNALSERVICE
+          predicates:
+            - Path=/weather/**
+        - id: AUTHENTICATION
+          uri: lb://AUTHENTICATION
+          predicates:
+            - Path=/user/**
+        - id: WISHLIST
+          uri: lb://WISHLIST
+          predicates:
+            - Path=/wishlist/**
+            
+
+    
+
+     
